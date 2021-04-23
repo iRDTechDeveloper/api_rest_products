@@ -1,0 +1,15 @@
+@RestController // Definimos la clase como servicio rest a traves de esta anotacion.
+@RequestMapping("products") // Aqui definimos la url por la cual se va a exponer los metodos del servicio rest de esta clase
+
+/*
+ * Bloque de ejemplo
+* /	 
+
+@GetMapping // Con esta anotacion exponemos este metodo para que sea leido atraves delservicio y siempre sera leido con la uri raiz "/" localhost:8080
+
+@RequestMapping(value = "saludar", method = RequestMethod.GET) // Con esta anotacion exponemos el medoto, pero se
+															  // consumira con una uri propia de este metodo.
+														     // localhost:8080/saludar
+public String Saludo() {
+	return "Bienvenido al mundo API REST con Spring Boot";
+}
